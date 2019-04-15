@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC">
+            <connections>
+                <outlet property="alphaView" destination="yKM-q4-3TO" id="dAf-hh-4n0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oe-Vr-uZb">
+                    <rect key="frame" x="12" y="251" width="49" height="32"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="左视图">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="showLeftAction:" destination="-1" eventType="touchUpInside" id="qkV-1U-V1j"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKZ-aA-Fzd">
+                    <rect key="frame" x="314" y="384" width="49" height="32"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="右视图">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="showRightAction:" destination="-1" eventType="touchUpInside" id="iax-vD-KRd"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主视图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aU-jK-kKD">
+                    <rect key="frame" x="127" y="309.5" width="121" height="48"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKM-q4-3TO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.75444135273972601" green="0.7951490805369863" blue="0.40796232876712329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OKZ-aA-Fzd" firstAttribute="centerY" secondItem="4aU-jK-kKD" secondAttribute="centerY" multiplier="1.2" id="9N0-ij-D10"/>
+                <constraint firstAttribute="trailing" secondItem="yKM-q4-3TO" secondAttribute="trailing" id="PUu-UP-Fjc"/>
+                <constraint firstAttribute="trailing" secondItem="OKZ-aA-Fzd" secondAttribute="trailing" constant="12" id="QeJ-Vm-Ky3"/>
+                <constraint firstItem="4aU-jK-kKD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="eTR-a5-DoP"/>
+                <constraint firstAttribute="bottom" secondItem="yKM-q4-3TO" secondAttribute="bottom" id="fad-lt-a8a"/>
+                <constraint firstItem="8oe-Vr-uZb" firstAttribute="centerY" secondItem="4aU-jK-kKD" secondAttribute="centerY" multiplier="0.8" id="hod-Qh-Eha"/>
+                <constraint firstItem="4aU-jK-kKD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lRc-B4-z7t"/>
+                <constraint firstItem="8oe-Vr-uZb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="ppH-d9-sWc"/>
+                <constraint firstItem="yKM-q4-3TO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sQx-qH-D1z"/>
+                <constraint firstItem="yKM-q4-3TO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yYG-Iy-bj7"/>
+            </constraints>
+            <point key="canvasLocation" x="76" y="38.23088455772114"/>
+        </view>
+    </objects>
+</document>
